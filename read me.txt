@@ -1,25 +1,30 @@
-originate date: 2/23/2021
-This .glm is a sucessful set up with 2 houses  
-with WH and Dryer for each house being read by 2 different meters, 
-using the mutli_recorder object
+Original Date: 2/27/2021
+This file has a model of the IEEE 13 node test feeder with 2 house(s) attached
+to node 611
+Water heater is attached to house
+and triplex object for dryer included
 
-I still need to work on uniform csv files...
+A meter monitors node 611 that measures the total power consumption of all
+house/loads. This can be viewed in the "Meter_611_Power.csv", in column labeled
+"meter611C:measured_power.real"
+
+WH demand schedules - For each demand schedule, they have been adjusted to turn on
+during dryer cycles and they don't turn on exactly at the same time to one another (there is some overlap).
+
+Switch - auction and passive_controller objects have been implemented for 2 houses.
 
 
+//Outline of script:
+//lines 73-767: complete configurations for IEEE 13 node Feeder
+//lines 773-1042: WH demand schedule
+//lines 1077-1129: auction + passive_controller
+//lines 1138-1157: Node Object (in use) + meter + lines
+//lines 1169-1217: center_tap transformer + triplex node + triplex lines
+//lines 1222-1232: triplex meters
+//lines 1237-1291: house objects + WH objects
+//lines 1296-1312: triplex line (from dryer to meter)
+//lines 1317-1343: triplex object (dryers)
+//lines 1347-1352: recorders
 
-update:2/25/2021
-.glm file has been changed and updated.
-a third meter was added at the node to measure the total consumption of the houses/loads
-
-the csv. files included are not accurate, but demonstrate the simulation run sucessful.
-
-
-update:2/27/2021
-.glm file has been changed and updated.
-uniform csv files have been created.
-output of simulation is as expected.
-
-please see lucid diagram for visual aid in what this script is.
-
--thank you!
-christine
+thank you!
+-Christine
