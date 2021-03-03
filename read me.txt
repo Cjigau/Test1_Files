@@ -1,0 +1,25 @@
+originate date: 2/23/2021
+This .glm is a sucessful set up with 2 houses  
+with WH and Dryer for each house being read by 2 different meters, 
+using the mutli_recorder object
+
+I still need to work on uniform csv files...
+
+
+
+update:2/25/2021
+.glm file has been changed and updated.
+a third meter was added at the node to measure the total consumption of the houses/loads
+
+the csv. files included are not accurate, but demonstrate the simulation run sucessful.
+
+
+update:2/27/2021
+.glm file has been changed and updated.
+uniform csv files have been created.
+output of simulation is as expected.
+
+please see lucid diagram for visual aid in what this script is.
+
+-thank you!
+christine
